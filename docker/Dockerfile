@@ -7,4 +7,4 @@ COPY tail-f.me /opt/app/test
 
 RUN chmod +x /opt/app/test
 
-CMD ["tail", "-f", "/opt/app/tail-f.me"]
+CMD ["tail", "-f", "/opt/app/test/tail-f.me"]
