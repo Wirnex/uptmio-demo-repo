@@ -13,15 +13,16 @@ env:
     - COMMIT=${TRAVIS_COMMIT::8}
     - REPO=fijjas/uptmio-demo-repo
     - DOCKER_COMPOSE_VERSION=1.8.1
+    - COMPOSE_INTERACTIVE_NO_CLI=1
 
 before_install:
   - echo Before-Install-OK
 
 before_script:
-  - export COMPOSE_INTERACTIVE_NO_CLI=1
   - echo Before-Script-OK
 
 script:
+  - printenv
   - docker-compose up -d
   - docker ps
   - sleep 5
