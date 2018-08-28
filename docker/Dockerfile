@@ -7,4 +7,4 @@ COPY tail-f.me /opt/app/
 
 RUN chmod +x /opt/app/test
 
-CMD ["tail", "-f", "/opt/app/tail-f.me"]
+CMD ["sleep", "3600"]
