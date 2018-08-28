@@ -18,6 +18,7 @@ before_install:
   - echo Before-Install-OK
 
 before_script:
+  - export COMPOSE_INTERACTIVE_NO_CLI=1
   - echo Before-Script-OK
 
 script:
